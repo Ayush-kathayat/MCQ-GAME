@@ -1,28 +1,44 @@
-/* src/components/Question.css */
-
-.question-container {
+.ques {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
   margin-bottom: 20px;
+  padding: 20px;
+  font-family: var(--primary-font);
+  font-size: var(--font-size-xmammoth);
 }
 
 .options-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: var(--font-size-xhuge);
 }
 
 .option-button {
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  padding: 10px 20px;
-  margin: 5px 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: inline;
+  border: none;
+  border-radius: 5px;
+  font-family: var(--primary-font);
+  background-color: var(--tertiary);
+  color: white;
+  font-size: 1em;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 .option-button:hover {
-  background-color: #e0e0e0;
+  background-color: var(--secondary);
 }
 
-.option-button.selected {
-  background-color: #d0d0d0;
+.selected {
+  background-color: var(--primary);
 }

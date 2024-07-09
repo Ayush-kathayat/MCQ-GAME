@@ -1,9 +1,12 @@
-
-
+import Quiz from "./component/Quiz";
+import "./App.css"
 function App() {
   return (
     <>
-      <h1>HEllo welcome to this mcq game </h1>
+      <div className="App">
+      <h1 className="title">MCQ Game</h1>
+      <Quiz />
+    </div>
     </>
   );
 }

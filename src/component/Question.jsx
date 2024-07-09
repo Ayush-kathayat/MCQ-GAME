@@ -4,7 +4,7 @@ import './Question.css';
 const Question = ({ question, options, handleAnswer, selectedOption }) => {
   return (
     <div className="question-container">
-      <h2>{question}</h2>
+      <h2 className='ques'>{question}</h2>
       <div className="options-container">
         {options.map((option, index) => (
           <button
